@@ -115,14 +115,17 @@ Dalam setiap tawa dan cerita yang kita bagi, aku menemukan kebahagiaan yang tak 
   </script>
   <script>
     $(document).ready(function () {
-      var audio = new Audio('audio/audio.mp3');
-      $("#tombol").click(function () {
-        $("#kontener2").fadeOut();
-        $("#kontener").fadeIn("4000");
-        audio.play();
-      });
+        var audio = new Audio('audio/audio.mp3');
+        // Set audio untuk repeat
+        audio.loop = true; // Menambahkan ini untuk membuat audio menjadi repeat
+        $("#tombol").click(function () {
+            $("#kontener2").fadeOut();
+            $("#kontener").fadeIn("4000");
+            audio.play();
+
+        });
     });
-  </script>
+</script>
   <script>
     var textWrapper = document.querySelector('.ml1 .letters');
     textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
