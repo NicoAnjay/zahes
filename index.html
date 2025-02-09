@@ -1,81 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-
+  
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yuanita Zahwa Nur Sasmi</title>
-  <meta name="description" content="Semangat menjalani hari - harinya yaa">
+  <meta name="description" content="Semangat menjalani hari - harinyaa yaa">
   <meta name="author" content="Maheswara Permana Suratna">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/efekteks.css">
   <link rel="stylesheet" href="css/responsif.css">
   <link rel="stylesheet" href="css/buciners.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
 </head>
 
 <body>
+  <!--Author    : Maheswara Permana Suratna
+  <!--Website   : https://nicoanjay.github.io/zahes/-->
   <div class="kontener2" id="kontener2">
     <h1>Haii Zahwaa, I Love uuuu</h1>
     <button class="tombol" id="tombol">Pencet Aku😊</button>
   </div>
 
-  <div class="kontener" id="kontener" style="display: none;">
+  <div class="kontener" id="kontener">
     <div class="dalemnya_kontener">
       <h1 class="judul_halaman">I Love You</h1>
       <a class="tombol_menu" onclick="klikMenu()"></a>
-      
-      <section class="halaman4 dalemnya_halaman">
+      <section class="halaman1 dalemnya_halaman" onclick="PindahKeHalaman(0)">
+        <h1 class="judul_halaman">Aku</h1>
+        <br>
+        <br>
+        <div class="ucapan1">
+          <p class="isiucapan1">Aku butuh kamu seperti jantung membutuhkan detak, setiap denyutnya adalah napas yang memberi arti pada hidupku. Tanpamu, rasanya seolah dunia ini kehilangan warna, seakan langit mendung tanpa sinar mentari. Aku menginginkanmu seperti gurun pasir yang mengharapkan hujan, setiap butirnya menanti tetesan yang akan menghidupkan kembali harapan dan mimpi yang terpendam.
+
+Setiap detik yang berlalu tanpa hadirmu terasa hampa, seperti melodi yang kehilangan nada. Aku ingin berbagi tawa dan cerita, menjelajahi setiap sudut dunia bersamamu, merasakan kehangatan yang hanya bisa kau berikan. Dalam setiap detik yang kita lalui, aku ingin menciptakan kenangan yang tak terlupakan, seperti bintang-bintang yang berkilau di malam gelap, memberi petunjuk dan harapan.</p>
+        </div>
+      </section>
+      <section class="halaman2 dalemnya_halaman" onclick="PindahKeHalaman(1)">
+        <h1 class="judul_halaman">Sayang</h1>
+        <br>
+        <br>
+        <div class="ucapan2">
+          <p class="isiucapan2">Aku menyayangimu bukan karena siapa dirimu, melainkan apa yang terjadi saat aku bersamamu. Setiap momen yang kita lewati bersama adalah sebuah perjalanan yang penuh warna, di mana tawa dan kebahagiaan mengisi ruang-ruang kosong dalam hidupku. Saat bersamamu, aku merasa hidup ini lebih berarti; setiap detik terasa berharga dan setiap kenangan yang kita ciptakan menjadi bagian tak terpisahkan dari diriku.
+          </p>
+        </div>
+      </section>
+      <section class="halaman3 dalemnya_halaman" onclick="PindahKeHalaman(2)">
+        <h1 class="judul_halaman">Kamu</h1>
+        <br>
+        <br>
+        <div class="ucapan3">
+          <p class="isiucapan3">Kamu adalah bintang yang selalu bersinar dalam hidupku, memberikan cahaya di saat-saat gelap dan harapan di saat-saat sulit. Setiap detik yang kita habiskan bersama adalah harta yang tak ternilai, mengajarkan aku arti sejati dari cinta dan persahabatan. Kehadiranmu membuat setiap hari terasa istimewa, dan aku bersyukur bisa berbagi perjalanan ini denganmu.
+
+Dalam setiap tawa dan cerita yang kita bagi, aku menemukan kebahagiaan yang tak terlukiskan. Terima kasih telah menjadi dirimu yang luar biasa, yang selalu mendukung dan menginspirasi. Mari kita terus menciptakan kenangan indah dan menjelajahi dunia ini bersama, karena bersamamu, segalanya terasa mungkin.</p>
+        </div>
+      </section>
+      <section class="halaman4 dalemnya_halaman" onclick="PindahKeHalaman(3)">
         <h1 class="judul_halaman">Yuanita Zahwa Nur Sasmi</h1>
+        <br>
         <h1 id="waktu"></h1>
-        <div id="ucapan"></div>
+        <script type="text/javascript">
+          document.write("<center>");
+          var hari = new Date();
+          var jam = hari.getHours();
+          if (jam >= 0 && jam < 12) {
+            document.write(
+              "<h1 class='ucapan'>Selamat Pagi Zahwa!</h1><p class='isiucapan'>Saat aku membuka mata setiap harinya, yang ingin aku lihat hanya zahwa.. sarapan duluu yaa<3<p>"
+            );
+          } else if (jam == 12) {
+            document.write(
+              "<h1 class='ucapan'>Selamat Siang Zahwa!</h1><p class='isiucapan'>Jangan lupaa makan ya. nanti sakiit perut<3<p>"
+            );
+          } else if (jam >= 12 && jam <= 17) {
+            document.write(
+              "<h1 class='ucapan'>Selamat Siang Menjelang Sore Zahwa!</h1><p class='isiucapan'>Jangan Lupa Mandi + Jam demi jam telah zahwa lalui dengan baik, persiapkan diri zahwa untuk aktivitas yang akan datang yaa <3<p>"
+            );
+          } else {
+            document.write(
+              "<h1 class='ucapan'>Selamat Malam Zahwa!</h1><p class='isiucapan'>Setelah seharian beraktivitas, kini telah tiba saatnya untuk beristirahat, rebahkan dirimu di kasur kesayanganmu. kabari mahes disetiap kegiatanmu. ily sayang kuu <3<p>"
+            );
+          }
+          document.write("</center>");
+        </script>
       </section>
     </div>
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"
+    integrity="sha512-synHs+rLg2WDVE9U0oHVJURDCiqft60GcWOW7tXySy8oIr0Hjl3K9gv7Bq/gSj4NDVpc5vmsNkMGGJ6t2VpUMA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/efek-salju.js" type="text/javascript"></script>
+  <script src="js/script.js"></script>
   <script>
-    function updateUcapan() {
-      let jam = new Date().getHours();
-      let ucapan = "";
-      
-      if (jam >= 0 && jam < 12) {
-        ucapan = "<h1 class='ucapan'>Selamat Pagi Zahwa!</h1><p class='isiucapan'>Saat aku membuka mata setiap harinya, yang ingin aku lihat hanya zahwa.. sarapan duluu yaa<3</p>";
-      } else if (jam >= 12 && jam < 15) {
-        ucapan = "<h1 class='ucapan'>Selamat Siang Zahwa!</h1><p class='isiucapan'>Jangan lupaa makan ya. nanti sakiit perut<3</p>";
-      } else if (jam >= 15 && jam <= 18) {
-        ucapan = "<h1 class='ucapan'>Selamat Sore Zahwa!</h1><p class='isiucapan'>Jangan Lupa Mandi + Jam demi jam telah zahwa lalui dengan baik, persiapkan diri zahwa untuk aktivitas yang akan datang yaa <3</p>";
-      } else {
-        ucapan = "<h1 class='ucapan'>Selamat Malam Zahwa!</h1><p class='isiucapan'>Setelah seharian beraktivitas, kini saatnya untuk beristirahat. Kabari Mahes di setiap kegiatanmu yaa. ily sayang kuu <3</p>";
-      }
-      
-      document.getElementById("ucapan").innerHTML = ucapan;
+    document.getElementById("waktu").innerHTML = formatAMPM();
+
+    function formatAMPM() {
+      var waktu = new Date(),
+        menit = waktu.getMinutes().toString().length == 1 ? '0' + waktu.getMinutes() : waktu.getMinutes(),
+        jam = waktu.getHours().toString().length == 1 ? '0' + waktu.getHours() : waktu.getHours(),
+        ampm = waktu.getHours() >= 12 ? 'PM' : 'AM',
+        bulan = ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July', 'August', 'Sept', 'October',
+          'November', 'December'
+        ],
+        hari = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+      return '<h1 class="ml1"><span class="text-wrapper"><span class="line line1"></span><span class="letters">' + hari[
+          waktu.getDay()] +
+        ', ' + waktu.getDate() + ' ' + bulan[waktu.getMonth()] +
+        ' ' + waktu.getFullYear() + '</span><span class="line line2"></span></span></h1><p class="ml2"> ' + jam + ':' +
+        menit + ' ' + ampm + ' </p>';
+
     }
-    
-    function formatWaktu() {
-      let waktu = new Date(),
-          menit = waktu.getMinutes().toString().padStart(2, '0'),
-          jam = waktu.getHours().toString().padStart(2, '0'),
-          ampm = waktu.getHours() >= 12 ? 'PM' : 'AM',
-          bulan = ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July', 'August', 'Sept', 'October', 'November', 'December'],
-          hari = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
-      
-      return `<h1 class="ml1"><span class="text-wrapper"><span class="letters">${hari[waktu.getDay()]}, ${waktu.getDate()} ${bulan[waktu.getMonth()]} ${waktu.getFullYear()}</span></span></h1>
-              <p class="ml2">${jam}:${menit} ${ampm}</p>`;
-    }
-    
-    document.getElementById("waktu").innerHTML = formatWaktu();
-    updateUcapan();
   </script>
-  
   <script>
-    document.getElementById("tombol").addEventListener("click", function () {
-      document.getElementById("kontener2").style.display = "none";
-      document.getElementById("kontener").style.display = "block";
-      let audio = new Audio('audio/audio.mp3');
-      audio.loop = true;
-      audio.play();
+    $(document).ready(function () {
+        var audio = new Audio('audio/audio.mp3');
+        // Set audio untuk repeat
+        audio.loop = true; // Menambahkan ini untuk membuat audio menjadi repeat
+        $("#tombol").click(function () {
+            $("#kontener2").fadeOut();
+            $("#kontener").fadeIn("8000");
+            audio.play();
+
+        });
     });
+</script>
+  <script>
+    var textWrapper = document.querySelector('.ml1 .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({
+        loop: false
+      })
+      .add({
+        targets: '.ml1 .letter',
+        scale: [0.3, 1],
+        opacity: [0, 1],
+        translateZ: 0,
+        easing: "easeOutExpo",
+        duration: 600,
+        delay: (el, i) => 70 * (i + 1)
+      }).add({
+        targets: '.ml1 .line',
+        scaleX: [0, 1],
+        opacity: [0.5, 1],
+        easing: "easeOutExpo",
+        duration: 700,
+        offset: '-=875',
+        delay: (el, i, l) => 80 * (l - i)
+      }).add({
+        targets: '.ml1',
+        opacity: 1,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+      });
+  </script>
+  <script>
+    var textWrapper = document.querySelector('.ml2');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({
+        loop: false
+      })
+      .add({
+        targets: '.ml2 .letter',
+        scale: [4, 1],
+        opacity: [0, 1],
+        translateZ: 0,
+        easing: "easeOutExpo",
+        duration: 950,
+        delay: 1400
+      }).add({
+        targets: '.ml2',
+        opacity: 1,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+      });
   </script>
 </body>
+
 </html>
